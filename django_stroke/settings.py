@@ -157,8 +157,3 @@ DJOSER = {
         'user': 'users.serializers.UserCreateSerializer'
     }
 }
-
-# Learned timezone confuguration from ---> https://www.sankalpjonna.com/learn-django/how-timezones-work-in-django
-
-TIME_ZONE = 'UTC'
-USE_TZ = True

@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS stroke;
-DROP USER IF EXISTS strokeuser;
+
 CREATE DATABASE stroke;
 CREATE USER strokeuser WITH PASSWORD 'stroke';
 GRANT ALL PRIVILEGES ON DATABASE stroke TO strokeuser;

@@ -6,7 +6,7 @@ from .models import Questionnaire
 
 class QuestionnaireSerializer(serializers.HyperlinkedModelSerializer):
 
-    # how to populate the owner field on review data
+    
     owner = serializers.ReadOnlyField(source='owner.username')
 
     class Meta:

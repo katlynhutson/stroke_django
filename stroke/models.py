@@ -9,7 +9,7 @@ class Questionnaire(models.Model):
     onset_time = models.DateTimeField()
     additional_notes = models.TextField()
     owner = models.ForeignKey(
-        'users.User', related_name='reviews', on_delete=models.CASCADE)
+        'users.User', related_name='questionnaires', on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.owner

@@ -8,11 +8,11 @@ from .permissions import IsOwnerOrReadOnly
 class QuestionnaireList(generics.ListCreateAPIView):
     queryset = Questionnaire.objects.all()
     serializer_class = QuestionnaireSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    permission_classes = [permissions.AllowAny]
 
-    # overwrite create method
-    def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
+    
+    # def perform_create(self, serializer):
+    #     serializer.save(owner=self.request.user)
 
 
 class QuestionnaireDetail(generics.RetrieveUpdateDestroyAPIView):
