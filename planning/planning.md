@@ -1,5 +1,11 @@
 # Planning
 
+## 02/15
+
+- create another model to hold generic data from people who do not want to create an account
+- edit the permissions for both models
+- deploy this to heroku
+
 ### Project idea
 
 > A first-responder tool to help identify potential strokes, record valuable information at the time of the neurological event, and lessen the burden of memory on civilian first responders. It’s a tool you can turn to if a loved one is behaving strangely, and you need to determine if you should call an ambulance for a possible stroke. The most important piece of information that needs to be gathered for stroke victims is the time of first symptoms. Time since symptom onset decides the potential treatment options. The longer it’s been the less options available and the more brain damage that is incurred. This app is a way of having some pieces of that puzzle without putting the burden on the loved one to remember protocol during an extremely stressful event.
