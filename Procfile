@@ -1,1 +1,1 @@
-web: gunicorn stroke_django.wsgi
+web: gunicorn django_stroke.wsgi
