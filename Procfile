@@ -1,0 +1,1 @@
+web: gunicorn stroke_django.wsgi
