@@ -2,6 +2,10 @@
 
 ## 02/15
 
+- redeploy changes
+
+## 02/15
+
 - create another model to hold generic data from people who do not want to create an account
 - edit the permissions for both models
 - deploy this to heroku
