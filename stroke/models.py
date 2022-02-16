@@ -6,7 +6,7 @@ class Questionnaire(models.Model):
     arm_drift = models.BooleanField()
     speech = models.BooleanField()
     created_at = models.DateTimeField(auto_now_add=True)
-    onset_time = models.DateTimeField()
+    onset_time = models.TimeField()
     additional_notes = models.TextField(blank=True)
     owner = models.ForeignKey(
         'users.User', related_name='questionnaires', on_delete=models.CASCADE)
@@ -21,7 +21,7 @@ class Data(models.Model):
     arm_drift = models.BooleanField()
     speech = models.BooleanField()
     created_at = models.DateTimeField(auto_now_add=True)
-    onset_time = models.DateTimeField()
+    onset_time = models.TimeField()
     additional_notes = models.TextField(blank=True)
     
 
